@@ -177,6 +177,11 @@ h1 {
     background: #F2F2F2;
    }
 
+
+   b {
+      color:red;
+   }
+  
    h3 {
     padding: 15 15 15 15px;
     font-family: 'Inter';
@@ -209,6 +214,7 @@ h1 {
     font-size: 14px;
     line-height: 18px;
     color: #1E1E1E;
+    margin-left: 10px;
    }
 
    #color {
@@ -228,6 +234,7 @@ h1 {
 
    input[type="checkbox"] {
     accent-color:green;
+    margin-left: 10px;
    }
 
    #Add {
@@ -238,6 +245,8 @@ h1 {
     color: #FFFFFF;
     background: #00A878;
     border-radius: 4px;
+    margin-left: 10px;
+    margin-bottom: 10px;
    }
 
    #popup {
