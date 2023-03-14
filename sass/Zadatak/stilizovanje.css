@@ -11,134 +11,94 @@
     
    
     width: 100%;
-    height: 120px;
+    height: 80px;
     background: #FE5E41;
   }
 
 
- nav ul {
-    display:inline;
-    color: #FFFFFF;
-    list-style-type: none;
- }
 
- .container {
-    width:95%;
-    height: 120px;
-    padding-left: 5%;
+ .image {
     
- }
-
- .image{
-    /*position: absolute;*/
     float:left;
     padding-top: 30px;
 
     color: #FFFFFF;
  }
-  #products {
-    position: absolute;
-    width: 79px;
-    height: 24px;
-    left:320px;
-    top:49px;
+
+ .responsive {
+    width:100%;
+    height:auto;
+ }
+ 
+
+.navmeni {
+    overflow: hidden;
+    margin-right:10%;
+    margin-left:5%;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-  }
-
-  #services {
-    position: absolute;
-    width: 76px;
-    height: 24px;
-    left: 439px;
-    top: 49px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-    list-style-type: none;
   }
   
-  #aboutus {
-    position: absolute;
-    width: 84px;
-    height: 24px;
-    left: 555px;
-    top: 49px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-    list-style-type: none;
+  .navmeni a {
+    float: left;
+    display: block;
+    color: rgb(255, 251, 251);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
   }
-
-
-#contact {
-  position: absolute;
-  width: 70px;
-  height: 24px;
-  left: 674px;
-  top: 49px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  color: #FFFFFF;
-  list-style-type: none;
-}
-
-li:hover{
-    content: attr(data-hover);
-    visibility: hidden;
-    width: max-content;
-    color:black;
-}
-
-#site-search {
-    /*position: absolute;*/
-    width: 256px;
-    height: 56px;
-    background:#F2F2F2;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 850px;
-    padding-top: 32px;
-    margin-left: 30px;
-    padding-bottom: 32px;
-     display:inline-block;
-    
-    
-    border-radius: 4px 4px 0px 0px;
-}
-
-#search-container {
-    
-    
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    margin-left: 700px;
-    margin-top: 2px;
-    font-family: 'Font Awesome 6 Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-   
-    color: #010000;
+  
+  .navmeni a:hover {
+    color: black;
+  }
+  
+  
+  .navmeni .search-div {
+    float: left;
+  }
+  
+  .navmeni input[type=text] {
+    float: left;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 18px;
+    border: none;
+  }
+  
+  .navmeni .search-div button {
+    float: left;
+    padding: 8px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navmeni .search-div button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navmeni .search-div {
+      float: none;
+    }
+    .navmeni a, .navmeni input[type=text], .navmeni .search-div button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .navmeni input[type=text] {
+      border: none;  
+    }
+  }
    
 
-}
-
-    
 
     #user {
         position: absolute;
@@ -170,7 +130,7 @@ li:hover{
         font-size: 20px;
         line-height: 20px;
         color: #FFFFFF;
-      /*  float:right;*/
+     
         
     }
 
@@ -188,16 +148,13 @@ li:hover{
         line-height: 18px;
 
         color: #FFFFFF;
-       /* float:right;*/
+       
     }
 
-    #ikonice {
-        display:inline;
-        float:left;
-    }
+    
 
 #part1{
-    /*margin:3%;*/
+    
     float:left;
     width:60%;
 }
@@ -216,11 +173,7 @@ h1 {
    #part2 {
     margin-top: 6%;
     float:right;
-   /* padding: 15 15 15 15px;*/
     width: 40%;
-   /* height: 450px;*/
-   /* left: 800px;
-    top: 150px;*/
     background: #F2F2F2;
    }
 
@@ -233,9 +186,7 @@ h1 {
     line-height: 5px;
    }
 
-   b {
-    color:red;
-   }
+  
    #parag {
     
     padding: 5 15 15 15px;
@@ -244,7 +195,6 @@ h1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    
     color: #1E1E1E;
    }
 
@@ -276,37 +226,6 @@ h1 {
    }
 
 
-   
-
-  /* #myCheck {
-    
-    width: 18px;
-    height: 20px;
-    left: 872px;
-    top: 547px;
-
-    font-family: 'Font Awesome 6 Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 20px;
-   }
-  
-   #Check {
-    
-    width: 18px;
-    height: 20px;
-    left: 872px;
-    top: 580px;
-
-    font-family: 'Font Awesome 6 Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-   }
-   */
-
    input[type="checkbox"] {
     accent-color:green;
    }
@@ -328,7 +247,6 @@ h1 {
     top: 624px;
     color:#00A878;
     background: #FFFFFF;
-
     border: 1px solid #DEDEDE;
     border-radius: 4px;
    }
@@ -362,7 +280,6 @@ h1 {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    
     color: #1E1E1E;
   }
   #spec {
@@ -392,7 +309,7 @@ h1 {
     font-size: 16px;
     line-height: 34px;
 
-    color: #cd1919;
+    color: #000000;
   }
 
   #part3 {
@@ -407,12 +324,6 @@ h1 {
 
   h2 {
     float: left;
-   /* text-align:right;
-    position: absolute;
-    width: 328px;
-    height: 36px;
-    left: 112px;
-    top: 845px;*/
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -422,18 +333,13 @@ h1 {
   }
 
   #parag2 {
-    float:left;
-    /*position:absolute;*/
-       width: 420px;
-        /*left: -7%;
-        top: 95%;
-        padding: 250px;*/
+        float:left;
+        width: 420px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
         line-height: 15px;
-        
         color: #1E1E1E;
     }
 
@@ -573,17 +479,17 @@ h1 {
                 font-family:raleway
                 }
                 #name {
-               /* background-image:url(../images/name.jpg);*/
+               
                 background-repeat:no-repeat;
                 background-position:5px 7px
                 }
                 #email {
-               /* background-image:url(../images/email.png);*/
+               
                 background-repeat:no-repeat;
                 background-position:5px 7px
                 }
                 textarea {
-                /*background-image:url(image1.png);*/
+               
                 background-repeat:no-repeat;
                 background-position:5px 7px;
                 width:82%;
@@ -612,40 +518,4 @@ h1 {
                 }
                 
 
-              /* #site-search #search-container {
-                    float: right;
-                  }
-                  
-                  #site-search input[type=text] {
-                    padding: 6px;
-                    margin-top: 8px;
-                    font-size: 17px;
-                    border: none;
-                  }
-                  #site-search #search-container button {
-                    float: left;
-                    padding: 6px 10px;
-                    margin-top: 8px;
-                    margin-right: 16px;
-                    background: #ddd;
-                    font-size: 17px;
-                    border: none;
-                    cursor: pointer;
-                  }
-
-                  @media screen and (max-width: 600px) {
-                    #site-search #search-container {
-                      float: none;
-                    }
-                    #site-search  input[type=text], #site-search #search-container button {
-                      float: none;
-                      display: block;
-                      text-align: left;
-                      width: 100%;
-                      margin: 0;
-                      padding: 14px;
-                    }
-                    #site-search input[type=text] {
-                      border: 3px solid rgb(181, 33, 33);  
-                    }
-                  }*/
+              

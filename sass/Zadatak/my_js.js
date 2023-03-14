@@ -1,6 +1,6 @@
 function check_empty() {
     if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
-    alert("Fill All Fields !");
+    alert("Your message has been sent successfully!");
     } else {
     document.getElementById('form').submit();
     alert("Form Submitted Successfully...");
